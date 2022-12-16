@@ -67,7 +67,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ![Cxlos6 Weather App](https://cxlos.github.io/CxLos6-Weather-App/)
 
-![Cxlos Weather Application](./assets/images/screenshot.png)
+![Cxlos Weather Application](./assets/images/screenshot-134237.png)
 
 ## License
 
