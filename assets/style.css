@@ -1,17 +1,135 @@
 body {
     font-family: sans-serif;
-    margin: -70px 0px 0px 0px;
-    margin-top: ;
+    margin: 0px 0px 0px 0px;
+    background-color: antiquewhite;
 }
 
 #blue {
     background: rgb(36, 153, 255);
     text-align: center;
+    border-bottom: 3px solid;
+    padding: -50px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    /* position: sticky; */
+    justify-content: center;
+    align-content: center;
 }
 
 h1 {
     color: aliceblue;
     font-size: 80px;
-    margin-left: -10px;
-    padding: 20px;
+    margin-left: 0px;
+    padding: 0px 0px 0px 0px;
+    /* position: static; */
+}
+
+h1:hover {
+    color: rgb(255, 255, 226);
+}
+
+h2 {
+    font-size: 45px;
+    padding: 2px;
+}
+
+#city {
+    font-size: 45px;
+    padding: 2px;
+}
+
+#city-input {
+    height: 45px;
+    width: 90%;
+    border-radius: 5px;
+    margin: 0px 0px 0px 0px;
+    font-size: 25px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+#sc {
+    color: rgb(0, 0, 0);
+}
+
+.page {
+    display: flex;
+}
+
+.page2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#search {
+    border: 3px solid;
+    border-radius: 5px;
+    padding: 25px 0px 25px 25px;
+    margin: 40px 20px 20px 40px;
+    background: rgb(127, 232, 255);
+    width: 25%;
+    height: 60%;
+}
+
+#display {
+    border: 3px solid;
+    border-radius: 5px;
+    padding: 0px 0px 10px 30px;
+    margin: 40px 40px 20px 20px;
+    width: 75%;
+    height: 30%;
+    background-color: white;
+}
+
+#forecast {
+    border: 3px solid;
+    border-radius: 5px;
+    padding: 0px 0px 10px 30px;
+    margin: 20px 40px 40px 20px;
+    width:75%;
+    background-color: white;
+}
+
+#history {
+    border: 3px solid;
+    border-radius: 5px;
+    padding: 0px 0px 10px 30px;
+    margin: 20px 20px 40px 40px;
+    width: 25%;
+    background-color: white;
+}
+
+.history2 {
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 105, 105);
+    box-shadow: -6px 5px rgb(255, 176, 176);
+    width: 80%;
+    padding: 15px;
+    margin: 15px 0px 0px 0px;
+    
+}
+
+#sbutton {
+    /* border: 2px solid; */
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(197, 197, 197);
+    font-size: 18px;
+    margin: 20px 0px 0px 0px;
+    width: 30%;
+    height: 3.5vh;
+    box-shadow: -3px 4px rgb(165, 165, 165);
+}
+
+#sbutton:hover {
+    cursor: pointer;
+    background-color: rgb(223, 223, 223);
+}
+
+#sbutton:active {
+    transform: translateY(2px);
 }
