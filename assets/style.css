@@ -46,8 +46,12 @@ h2 {
     margin: 0px 0px 0px 0px;
     font-size: 25px;
     background-color: rgb(255, 255, 255);
-
 }
+
+/* #city-name {
+    display: flex;
+    flex-direction: row;
+} */
 
 #sc {
     color: rgb(0, 0, 0);
@@ -59,7 +63,7 @@ h2 {
 
 .page2 {
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
 }
 
 #search {
@@ -73,6 +77,9 @@ h2 {
 }
 
 #display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 3px solid;
     border-radius: 5px;
     padding: 0px 0px 10px 30px;
@@ -80,6 +87,24 @@ h2 {
     width: 75%;
     height: 30%;
     background-color: white;
+}
+
+#display2 {
+    display: flex;
+    flex-direction: row;
+}
+
+#display3 {
+   margin: 15px 0px 0px 50px;
+}
+
+.positioning {
+    width: 30%;
+    height: 90%;
+} */
+
+#condition {
+    /* align-self: center; */
 }
 
 #forecast {
@@ -133,3 +158,22 @@ h2 {
 #sbutton:active {
     transform: translateY(2px);
 }
+
+#box5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#cast {
+    /* border: 3px solid; */
+    border-radius: 5px;
+    box-shadow: 0px 0px ;
+    background-color: rgb(255, 201, 201);
+    height: 20vh;
+    width: 10vw;
+    margin: 0px 20px 10px -10px;
+    padding: 0px 0px 0px 20px;
+    box-shadow: -6px 5px rgb(255, 176, 176);
+}
+
