@@ -12,7 +12,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     height: 100px;
-    /* position: sticky; */
     justify-content: center;
     align-content: center;
 }
@@ -22,7 +21,6 @@ h1 {
     font-size: 80px;
     margin-left: 0px;
     padding: 0px 0px 0px 0px;
-    /* position: static; */
 }
 
 h1:hover {
@@ -48,11 +46,6 @@ h2 {
     background-color: rgb(255, 255, 255);
 }
 
-/* #city-name {
-    display: flex;
-    flex-direction: row;
-} */
-
 #sc {
     color: rgb(0, 0, 0);
 }
@@ -63,7 +56,6 @@ h2 {
 
 .page2 {
     display: flex;
-    /* justify-content: flex-end; */
 }
 
 #search {
@@ -101,11 +93,7 @@ h2 {
 .positioning {
     width: 30%;
     height: 90%;
-} */
-
-#condition {
-    /* align-self: center; */
-}
+} 
 
 #forecast {
     border: 3px solid;
@@ -135,11 +123,9 @@ h2 {
     width: 80%;
     padding: 15px;
     margin: 15px 0px 0px 0px;
-    
 }
 
 #sbutton {
-    /* border: 2px solid; */
     border: none;
     border-radius: 5px;
     background-color: rgb(197, 197, 197);
@@ -166,13 +152,12 @@ h2 {
 }
 
 #cast {
-    /* border: 3px solid; */
     border-radius: 5px;
     box-shadow: 0px 0px ;
     background-color: rgb(255, 201, 201);
-    height: 20vh;
+    height: 21vh;
     width: 10vw;
-    margin: 0px 20px 10px -10px;
+    margin: 0px 30px 20px 0px;
     padding: 0px 0px 0px 20px;
     box-shadow: -6px 5px rgb(255, 176, 176);
 }
