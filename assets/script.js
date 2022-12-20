@@ -29,6 +29,24 @@ var hi = document.querySelector('#hi');
 var hi = document.querySelector('#hi');
 var hi = document.querySelector('#hi');
 var hi = document.querySelector('#hi');
+///////////////////////////////////////////
+var lo1 = document.querySelector('#lo1');
+var lo2 = document.querySelector('#lo2');
+var lo3 = document.querySelector('#lo3');
+var lo4 = document.querySelector('#lo4');
+var lo5 = document.querySelector('#lo5');
+///////////////////////////////////////////
+var g1 = document.querySelector('#g1');
+var g2 = document.querySelector('#g2');
+var g3 = document.querySelector('#g3');
+var g4 = document.querySelector('#g4');
+var g5 = document.querySelector('#g5');
+///////////////////////////////////////////
+var f1 = document.querySelector('.f1');
+var f2 = document.querySelector('.f2');
+var f3 = document.querySelector('.f3');
+var f4 = document.querySelector('.f4');
+var f5 = document.querySelector('.f5');
 /////// Empty Array ////////////
 var x = [];
 // let entries = JSON.parse(localStorage.setItem("Recorded Cities")) ||[];
@@ -89,49 +107,112 @@ function getWeather () {
     condition.src = "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png"
 
     console.log(data);
-    console.log(apiKey);
+    // console.log(apiKey);
       // var nameValue = data['main']['name'];
     // var tempValue = data['main']['temp'];
     // var humValue = data['main']['humidity'];
     // var windValue = data['wind'];
 })
-
-// To-do: for loop for 5-day forecast
-
-// .catch(err => alert("Wrong"))
-
-    // weather.innerHTML = '';
-    // weather.innerHTML = resp.daily.map(day => {
-    //     return <p>Day</p>
-    // }).join('');
 }
 
-function getweather5 () {
+function getWeather1 () {
+
     fetch('https://api.openweathermap.org/data/2.5/forecast?q='+input1.value+'&units=imperial&appid=ca9ea4f898c4e91a2941e8e7024667b9')
 
     .then(response => response.json())
     .then(data => {
 
-        for(i=0; i < 5; i++) {
-            document.getElementById("day" +(i+1)+"Min").textContent = "Min: " + Number(data.list[i].main.temp_min).toFixed(1)+"°"
-        }
+        f1.textContent = data.list[0].sys.dt_txt
+        hi1.textContent = "High: " + data.list[0].main.temp + '°'
+        lo1.textContent = "Low: " + data.list[0].main.temp + '°'
+        g1.src = "http://openweathermap.org/img/wn/" + data.list[0].weather[0].icon + ".png"
 
-        for(i=0; i < 5; i++) {
-            document.getElementById("day" +(i+1)+"Max").textContent = "Max: " + Number(data.list[i].main.temp_max).toFixed(1)+"°"
-        }
+    console.log(data);
+})
+}
 
-        for(i=0; i < 5; i++) {
-            document.getElementById("img" +(i+1)).src = "http://openweathermap.org/img/wn/" + data.list[i].weather[0].icon + ".png"
-        }
+function getWeather2 () {
 
-        // temp.textContent = 'Current Temperature: ' + data.main.temp + '°'
-        // hi1.textContent = data.list[0].main.temp 
+    fetch('https://api.openweathermap.org/data/2.5/forecast?q='+input1.value+'&units=imperial&appid=ca9ea4f898c4e91a2941e8e7024667b9')
 
-        console.log(data);
-    })
-.catch(err => alert("Uh Oh!"))
+    .then(response => response.json())
+    .then(data => {
+
+        hi2.textContent = "High: " + data.list[1].main.temp + '°'
+        lo2.textContent = "Low: " + data.list[1].main.temp + '°'
+        g2.src = "http://openweathermap.org/img/wn/" + data.list[1].weather[0].icon + ".png"
+
+})
+}
+
+function getWeather3 () {
+
+    fetch('https://api.openweathermap.org/data/2.5/forecast?q='+input1.value+'&units=imperial&appid=ca9ea4f898c4e91a2941e8e7024667b9')
+
+    .then(response => response.json())
+    .then(data => {
+
+        hi3.textContent = "High: " + data.list[2].main.temp + '°'
+        lo3.textContent = "Low: " + data.list[2].main.temp + '°'
+        g3.src = "http://openweathermap.org/img/wn/" + data.list[2].weather[0].icon + ".png"
+
+})
+}
+
+function getWeather4 () {
+
+    fetch('https://api.openweathermap.org/data/2.5/forecast?q='+input1.value+'&units=imperial&appid=ca9ea4f898c4e91a2941e8e7024667b9')
+
+    .then(response => response.json())
+    .then(data => {
+
+        hi4.textContent = "High: " + data.list[3].main.temp + '°'
+        lo4.textContent = "Low: " + data.list[3].main.temp + '°'
+        g4.src = "http://openweathermap.org/img/wn/" + data.list[3].weather[0].icon + ".png"
+
+})
+}
+
+function getWeather5 () {
+
+    fetch('https://api.openweathermap.org/data/2.5/forecast?q='+input1.value+'&units=imperial&appid=ca9ea4f898c4e91a2941e8e7024667b9')
+
+    .then(response => response.json())
+    .then(data => {
+
+        hi5.textContent = "High: " + data.list[4].main.temp + '°'
+        lo5.textContent = "Low: " + data.list[4].main.temp + '°'
+        g5.src = "http://openweathermap.org/img/wn/" + data.list[4].weather[0].icon + ".png"
+
+})
+}
+
+// function getweatherFor () {
+//     fetch('https://api.openweathermap.org/data/2.5/forecast?q='+input1.value+'&units=imperial&appid=ca9ea4f898c4e91a2941e8e7024667b9')
+
+//     .then(response => response.json())
+//     .then(data => {
+
+//         for(i=0; i < 5; i++) {
+//             document.getElementById("Min" +(i+1)+"hi9").textContent = "Min: " + Number(data.list[i].main.temp_min).toFixed(1)+"°"
+//         }
+
+//         for(i=0; i < 5; i++) {
+//             document.getElementById("day" +(i+1)+"Max").textContent = "Max: " + Number(data.list[i].main.temp_max).toFixed(1)+"°"
+//         }
+
+//         for(i=0; i < 5; i++) {
+//             document.getElementById("g1" +(i+1)).src = "http://openweathermap.org/img/wn/" + data.list[i].weather[0].icon + ".png"
+//         }
+
+//         // temp.textContent = 'Current Temperature: ' + data.main.temp + '°'
+//         // hi1.textContent = data.list[0].main.temp 
+
+//         console.log(data);
+//     })
+// // .catch(err => alert("Uh Oh!"))
     
-} 
+// } 
 
 ////////////// Appenidng cities /////////
 
@@ -219,7 +300,11 @@ function displayCity (e) {
 var sWeather = document.querySelector('#sbutton');
 
 sWeather.addEventListener('click', getWeather);
-sWeather.addEventListener('click', getweather5);
+sWeather.addEventListener('click', getWeather1);
+sWeather.addEventListener('click', getWeather2);
+sWeather.addEventListener('click', getWeather3);
+sWeather.addEventListener('click', getWeather4);
+sWeather.addEventListener('click', getWeather5);
 // sWeather.addEventListener('click', addHistory);
 // sWeather.addEventListener('click', displayCity);
 sWeather.addEventListener('click', storeCity);
